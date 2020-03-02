@@ -1,0 +1,22 @@
+{% if status is not defined %}
+<div>
+<form action="creer_offre" method="POST"> 
+<label for="title">Insérez un titre : </label>
+<input type="text" name="title" id="title">
+<label for="description">Insérez une description : </label>
+<input type="text" name="description" id="description">
+<input type="submit" value="OK">
+</form>
+</div>
+
+{% else %}
+
+<div>
+<p>{{status}}</p>
+{% if offre is defined %}
+     {{offre.get_title}} 
+     {{offre.get_description}}
+{% endif %}
+</div>
+
+{% endif %}
