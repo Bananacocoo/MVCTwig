@@ -12,7 +12,7 @@ if (!isset($_SERVER['DOCUMENT_ROOT'])) {
 }
 
 // Define de la racine du site
-define('_PATH_', $_SERVER['DOCUMENT_ROOT'] . '/MVCTwig/');
+define('_PATH_', $_SERVER['DOCUMENT_ROOT'] . '/ExerciceMvc/MVCTwig/');
 
 // Define du dossier Coeur
 define('_MODEL_', _PATH_ . 'model/');
